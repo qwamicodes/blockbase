@@ -1,0 +1,49 @@
+.header {
+    min-width: 100%;
+    min-height: 15vh;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-bottom: 1px solid $color-primary;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+
+    &__title {
+        flex: 0 0 30%;
+        align-self: stretch;
+        @include flexCenter;
+        
+        &--text {
+            color: $color-primary;
+            font-family: $font-quicksand;
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 1.5;
+        }
+    }
+    
+    &__search {
+        flex: 1;
+        align-self: stretch;
+        @include flexLeft;
+
+        &--bar {
+            width: 60%;
+            height: 5rem;
+            border: 1px solid rgba(0,0,0, .5);
+            border-radius: 10rem;
+            font-family: $font-quicksand;
+            font-size: medium;
+            transition: all .5s ease-in;
+            text-align: center;
+            border-color: $color-primary;
+
+            &:focus {
+                outline: none;
+                box-shadow: $box-shadow-lg;
+            }
+        }
+    }
+}

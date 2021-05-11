@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Block Base</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h3 class="header__title--text">BlockBase</h3>
+        </div>
+        <div class="header__search">
+            <input type="search" name="search" placeholder="Find your crypto currency" class="header__search--bar">
+        </div>
+    </header>
+    <main class="main">
+       <section class="crypto">
+           <div class="heading">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <h4 class="crypto__name--head">Coin</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--title">Pound Sterling (GBP)</div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--title">Dollar (USD)</div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--title">Euro (EUR)</div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--title">Ghana Cedi (GHS)</div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--title">Nigerian Naira (NGN)</div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list bitcoin">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/btc.png" alt="Bitcoin">
+                        <h4 class="crypto__name--title">bitcoin (BTC)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="btc-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="btc-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="btc-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="btc-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="btc-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list ethereum">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/eth.png" alt="ethereum">
+                        <h4 class="crypto__name--title">ethereum (ETH)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eth-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eth-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eth-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eth-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eth-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list bitcoin Cash">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/bch.png" alt="Bitcoin Cash">
+                        <h4 class="crypto__name--title">bitcoin Cash (BCH)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bch-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bch-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bch-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bch-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bch-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list eos">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/eos.png" alt="eos">
+                        <h4 class="crypto__name--title" style="text-transform: uppercase !important;">EOS (EOS)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eos-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eos-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eos-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eos-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="eos-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list litecoin">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/ltc.png" alt="litecoin">
+                        <h4 class="crypto__name--title">litecoin (LTC)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="ltc-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="ltc-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="ltc-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="ltc-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="ltc-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list bitcoin sv">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/bsv.png" alt="Bitcoin sv">
+                        <h4 class="crypto__name--title">bitcoin SV (BSV)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bsv-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bsv-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bsv-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bsv-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bsv-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list tron">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/trx.jpg" alt="tron">
+                        <h4 class="crypto__name--title">tron (TRX)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="trx-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="trx-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="trx-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="trx-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="trx-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list ethereum-classic">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/etc.png" alt="ethereum-classic">
+                        <h4 class="crypto__name--title">ethereum classic (ETC)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="etc-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="etc-USD"> </div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="etc-EUR"> </div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="etc-GHS"> </div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="etc-NGN"> </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list xrp">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/xrp.png" alt="xrp">
+                        <h4 class="crypto__name--title">xrp (XRP)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xrp-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xrp-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xrp-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xrp-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xrp-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list binance">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/bnb.png" alt="binance">
+                        <h4 class="crypto__name--title">binance Coin (BNB)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bnb-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bnb-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bnb-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bnb-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="bnb-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list flash">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/flash.png" alt="flash">
+                        <h4 class="crypto__name--title">flash (FLASH)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="flash-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="flash-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="flash-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="flash-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="flash-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list dash">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/dash.png" alt="dash">
+                        <h4 class="crypto__name--title">dash (DASH)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="dash-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="dash-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="dash-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="dash-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="dash-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list stellar">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/xlm.png" alt="stellar">
+                        <h4 class="crypto__name--title">stellar (XML)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xlm-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xlm-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xlm-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xlm-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="xlm-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list cosmos">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/atom.png" alt="cosmos">
+                        <h4 class="crypto__name--title">cosmos (ATOM)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="atom-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="atom-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="atom-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="atom-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="atom-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="crypto">
+           <div class="crypto__list tether">
+               <div class="crypto__menu">
+                    <div class="crypto__name">
+                        <img class="crypto__name--img" src="src/img/usdt.png" alt="tether">
+                        <h4 class="crypto__name--title">tether (USDT)</h4>
+                    </div>
+               </div>
+               <div class="crypto__menu">
+                    <div class="crypto__prices">
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="usdt-GBP"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="usdt-USD"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="usdt-EUR"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="usdt-GHS"></div>
+                        </div>
+                        <div class="crypto__prices--cur">
+                            <div class="crypto__prices--value" id="usdt-NGN"></div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+       </section>
+    </main>
+
+    <script type="text/javascript" src="assets/js/blockfetch.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
